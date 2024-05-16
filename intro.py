@@ -19,3 +19,6 @@ np.savetxt('lc_data.txt', np.column_stack((time_values, flux_values)), header='T
 # header='Time Flux' specifies the column headers in the text file
 # fmt='%f %f' specifies the format of data (floating-point numbers)
 # comments='' specifies that no comment string will be prepended to each line
+
+lc.plot();
+plt.savefig('Boyajian star')
