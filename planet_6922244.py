@@ -1,6 +1,6 @@
 from lightkurve import search_targetpixelfile
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 pixelfile = search_targetpixelfile("KIC 6922244", quarter=4).download();
 
 pixelfile.plot(frame=1000)
@@ -23,4 +23,3 @@ folded_lc = flat_lc.fold(period=3.522)
 folded_lc.plot()
 plt.savefig('folded')
 
-#periodogram example
